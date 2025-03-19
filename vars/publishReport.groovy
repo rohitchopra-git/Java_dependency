@@ -1,6 +1,7 @@
 def call() {
     stage('Publish Report') {
-        steps {
+        script {
+            echo "Publishing Dependency Check Report..."
             publishHTML([
                 allowMissing: false, 
                 alwaysLinkToLastBuild: true, 
